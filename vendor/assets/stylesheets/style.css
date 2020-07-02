@@ -77,7 +77,12 @@ p {
           margin-bottom: 6em;
 }
 
-
+.btn-up {
+  position:fixed;
+  color: #235E70;
+  bottom:1em;
+  right:1em;
+}
 
 
 /*--------------------------------------------------------------
