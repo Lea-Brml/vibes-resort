@@ -21,18 +21,18 @@
       <div class="container">
 
         <div class="logo float-left pt-3">
-          <a href="index.html"><%=image_tag("logo-min.png")%></a>
+          <%= link_to image_tag( 'logo-min.png'), root_path%>
         </div>
 
         <nav class="nav-menu float-right d-none d-lg-block pt-3 ">
           <ul>
-            <li class="active"><a href="index.html">Vibes Resort</a></li>
-            <li><a href="#about">Le Village</a></li>
-            <li><a href="#services">L'Emplacement</a></li>
-            <li><a href="#portfolio">L'Architecture</a></li>
-            <li><a href="#team">Les Appartements</a></li>
-            <li><a href="#team">Le Roof Top</a></li>
-            <li><a href="#contact">Contactez-nous</a></li>
+            <li><%= link_to "Vibes Resort", root_path %></li>
+            <li><%= link_to "Le Village", root_path(anchor: 'village') %></li>
+            <li><%= link_to "L'Emplacement", root_path(anchor: 'emplacement') %></li>
+            <li><%= link_to "L'Architecture", root_path(anchor: 'architecture') %></li>
+            <li><%= link_to "Les Appartements", root_path(anchor: 'appartements') %></li>
+            <li><%= link_to "Le Rooftop", root_path(anchor: 'rooftop') %></li>
+            <li><%= link_to "Contactez-nous", root_path(anchor: 'contact') %></li>
           </ul>
         </nav><!-- .nav-menu -->
 

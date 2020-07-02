@@ -7,13 +7,14 @@
   <div class="col-6">
 
     <div class="container">
-      <h1 class="pb-4">Téléchargez la plaquette de Vibes Resort</h1>
+      <h1 class="pb-4">Téléchargez la plaquette<br> de Vibes Resort</h1>
 
       <p class="p-font pt-4 pb-4">Pour télécharger la plaquette de notre résidence Vibes Resort située au Cap d'Agde, veuillez cliquer sur le bouton ci-dessous.  </p>
     </div>
 
       <div class="container text-center">
-        <a href="#about" class="btn-get-started animate__animated animate__fadeInUp scrollto">Télécharger la plaquette</a>
+        <%= link_to "Télécharger la plaquette", asset_path("plaquette-vibes-resort.pdf"), class:"btn-get-started animate__animated animate__fadeInUp scrollto" %>
+        <%= link_to "Contactez-nous", root_path, class:"btn-invers animate__animated animate__fadeInUp scrollto" %>
       </div>
 
   </div>

@@ -552,6 +552,25 @@ p {
   background: #235E70;
 }
 
+.btn-get-started {
+  font-family: "Raleway", sans-serif;
+  border-radius: 4px;
+  font-weight: 500;
+  font-size: 14px;
+  letter-spacing: 1px;
+  display: inline-block;
+  padding: 12px 32px;
+  border-radius: 5px;
+  transition: 0.5s;
+  line-height: 1;
+  margin: 10px;
+  color: #fff;
+  -webkit-animation-delay: 0.8s;
+  animation-delay: 0.8s;
+  border: 0;
+  background: #235E70;
+}
+
 .btn-invers {
   font-family: "Raleway", sans-serif;
   border-radius: 4px;
@@ -569,6 +588,8 @@ p {
   animation-delay: 0.8s;
   border: 0;
   background: #fff;
+  border: solid 1px;
+  border-color: #235E70;
 }
 
 .btn-invers:hover {
@@ -578,6 +599,11 @@ p {
 
 
 #hero .btn-get-started:hover {
+  background: #fff;
+  color : #235E70
+}
+
+.btn-get-started:hover {
   background: #fff;
   color : #235E70
 }
