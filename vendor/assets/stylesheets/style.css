@@ -84,6 +84,12 @@ p {
   right:1em;
 }
 
+.image-village {
+  border : 0.2rem solid;
+  border-color: #235E70;
+}
+
+
 
 /*--------------------------------------------------------------
 # Back to top button

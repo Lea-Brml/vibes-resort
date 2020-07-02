@@ -14,10 +14,9 @@
  *= require_self
  *= require bootstrap.min
  *= require icofont.min
- *= require boxicons.min
  *= require animate.min
  *= require venobox
  *= require owl.carousel.min
  *= require aos
- *= require style 
+ *= require style
  */
