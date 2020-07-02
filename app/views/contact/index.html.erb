@@ -1,0 +1,36 @@
+
+<section class="about-lists" style="padding-top:8em;">
+      <div class="container">
+
+        <h2><%= @contact.count %> Demandes de Contact </h2>
+
+
+        <div class="row no-gutters">
+          <% @contact.each do |i|%>
+          <div class="col-lg-4 col-md-6 content-item" data-aos="fade-up">
+            <span><%= i.email%></span>
+            <h4><%= i.firstname %>   <%= i.name %></h4>
+            <p><%= i.message %></p>
+          </div>
+          <% end%>
+        </div>
+
+      </div>
+</section>
+
+
+<section class="about-lists" style="padding-top:8em; min-height:85vh;">
+      <div class="container">
+
+        <h2><%= @plaquette.count %> Téléchargements de la Plaquette </h2>
+
+        <div class="row no-gutters">
+          <% @plaquette.each do |i|%>
+          <div class="col-lg-4 col-md-6 content-item" data-aos="fade-up">
+            <span><%= i.email%></span>
+          </div>
+          <% end%>
+        </div>
+
+      </div>
+</section><!-- End About Lists Section -->

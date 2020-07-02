@@ -25,6 +25,9 @@ class ContactController < ApplicationController
 
   def index
 
+    @contact = Contact.all
+    @plaquette = Plaquette.all
+
   end
 
 

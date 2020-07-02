@@ -16,8 +16,8 @@
                 <p class="animate__animated animate__fadeInUp" style="font-size:18px;">Vibes Resort, nouvelle résidence au Cap d'Agde, est né de l’idée d’offrir un lieu d’exception
 à la fois intime et convivial, avec des équipements de
 haut standing et un niveau de confort sans pareil.</p>
-                <a href="#about" class="btn-get-started animate__animated animate__fadeInUp scrollto">Contactez-nous</a>
-                <a href="#about" class="btn-invers animate__animated animate__fadeInUp scrollto">Télécharger la Plaquette</a>
+                <%= link_to "Contactez-nous", root_path(anchor: 'contact'), class: "btn-get-started animate__animated animate__fadeInUp scrollto" %>
+                <%= link_to "Téléchargez la Plaquette", new_plaquette_path, class: "btn-invers animate__animated animate__fadeInUp scrollto" %>
               </div>
             </div>
           </div>
@@ -30,8 +30,8 @@ haut standing et un niveau de confort sans pareil.</p>
                 <p style="font-size:18px;" class="animate__animated animate__fadeInUp">Vibes Resort, nouvelle résidence au Cap d'Agde, est né de l’idée d’offrir un lieu d’exception
 à la fois intime et convivial, avec des équipements de
 haut standing et un niveau de confort sans pareil.</p>
-                <a href="#about" class="btn-get-started animate__animated animate__fadeInUp scrollto">Contactez-nous</a>
-                <a href="#about" class="btn-invers animate__animated animate__fadeInUp scrollto">Télécharger la Plaquette</a>
+                <%= link_to "Contactez-nous", root_path(anchor: 'contact'), class: "btn-get-started animate__animated animate__fadeInUp scrollto" %>
+                <%= link_to "Téléchargez la Plaquette", new_plaquette_path, class: "btn-invers animate__animated animate__fadeInUp scrollto" %>
               </div>
             </div>
           </div>
@@ -44,8 +44,8 @@ haut standing et un niveau de confort sans pareil.</p>
                 <p style="font-size:18px;" class="animate__animated animate__fadeInUp">Vibes Resort, nouvelle résidence au Cap d'Agde, est né de l’idée d’offrir un lieu d’exception
 à la fois intime et convivial, avec des équipements de
 haut standing et un niveau de confort sans pareil.</p>
-                <a href="#about" class="btn-get-started animate__animated animate__fadeInUp scrollto">Contactez-nous</a>
-                <a href="#about" class="btn-invers animate__animated animate__fadeInUp scrollto">Télécharger la Plaquette</a>
+                <%= link_to "Contactez-nous", root_path(anchor: 'contact'), class: "btn-get-started animate__animated animate__fadeInUp scrollto" %>
+                <%= link_to "Téléchargez la Plaquette", new_plaquette_path, class: "btn-invers animate__animated animate__fadeInUp scrollto" %>
               </div>
             </div>
           </div>
@@ -85,12 +85,14 @@ haut standing et un niveau de confort sans pareil.</p>
 
           <div class="col-8">
 
-            <p class="p-font">Situé à l’intérieur du village naturiste, Vibes Resort
+            <p class="p-font">Situé à l’intérieur du <strong>village naturiste du Cap d'Agde</strong>, Vibes Resort
             profite d’un emplacement à la fois incontournable et incomparable, comme un véritable signal d’entrée.</p>
 
-            <p class="p-font">Cette résidence de luxe à vocation touristique abrite
+            <p class="p-font">Cette <strong>résidence de luxe à vocation touristique</strong> abrite
             appartements privés, piscine et jacuzzis, bar lounge
             et restaurant, sur une terrasse panoramique à la vue imprenable. Un véritable appel au lâcher prise et à la volupté sur fond azur !</p>
+
+            <%= link_to "Téléchargez la Plaquette", new_plaquette_path, class: "btn-invers animate__animated animate__fadeInUp scrollto text-center mx-auto" %>
 
           </div>
 
@@ -121,8 +123,7 @@ en Méditerranée et plus grand village d’Europe,
 il représente aujourd’hui une opportunité
 d’investissement dans un endroit unique, où plaisirs,
 liberté et festivités s’expriment dans la tolérance
-et le respect d’autrui.
-Avec tous les équipements,</p>
+et le respect d’autrui.</p>
 
             <p class="p-font2 pt-4 mt-4 mr-4 pr-4 ml-4 pl-4"> Avec tous les équipements, commerces, restaurants
 et services nécessaires au confort de la vie
@@ -145,7 +146,7 @@ aménagées, sans oublier un port de plaisance de
       <div class="jumbotron-archi active " style="background-image:url(<%= asset_path 'vibes-resort-1.jpg' %>) ; background-position:bottom; margin-top:-2em; ">
 
         <div class="container archi text-center" style="padding:6em;" >
-            <h2 class="mb-4 pb-4" id="architecture"> L’ A R C H I T E C T U R E </h2>
+            <h2 class="mb-4 pb-4" id="architecture"> L'Architecture</h2>
 
             <p class="p-font3" > Signé par l’agence montpelliéraine A+ Architecture,
 le concept architectural de la résidence trouve son
@@ -153,6 +154,12 @@ origine dans le mouvement de la vague. L’ondulation
 des lignes évoque, dans une forme résolument
 futuriste à l’esthétisme pur, le mouvement perpétuel
 de la mer et le charme de l’éternel féminin. </p>
+
+
+        <%= link_to "Contactez-nous", root_path(anchor: 'contact'), class: "btn-get-started animate__animated animate__fadeInUp scrollto" %>
+        <%= link_to "Téléchargez la Plaquette", new_plaquette_path, class: "btn-invers animate__animated animate__fadeInUp scrollto" %>
+
+
         </DIV>
 
       </div>
@@ -168,7 +175,7 @@ de la mer et le charme de l’éternel féminin. </p>
 
 
           <div class="container archi text-center" style="padding:4em;" data-aos="fade-up" data-aos-delay="100">
-              <h2 class="mb-4 pb-4"> L E S A P P A R T E M E N T S </h2>
+              <h2 class="mb-4 pb-4"> Les Appartements </h2>
 
               <p class="p-font2"> Rejoignez vos appartements privés et profitez
 d’un confort de grand standing, que l’on a aussi
@@ -182,6 +189,7 @@ tellement irrésistibles. </p>
             stationnements privatifs sécurisés ; ici, tout est
             dédié à votre bien-être. </p>
 
+            <a href="#contact">mlzemazke</a>
 
           </DIV>
 
@@ -262,62 +270,36 @@ tellement irrésistibles. </p>
         <div class="col-6 col-sm-12 col-lg-6 col-md-6">
 
           <div class="container archi text-center" style="padding:4em;" data-aos="fade-up" data-aos-delay="100">
-              <h2 class="mb-4 pb-4" id="rooftop"> L E  R O O F T O P </h2>
+              <h2 class="mb-4 pb-4" id="rooftop"> Le Rooftop </h2>
 
               <p class="p-font2">À l’intérieur de la résidence, c’est le domaine privé
-du luxe et de l’hédonisme. Avec vue panoramique sur
-le village naturiste, Port Ambonne et la Méditerranée,
-le rooftop de Vibes Resort est une île privée, où
-le temps qui passe se déguste avec raffinement.
- </p>
+              du luxe et de l’hédonisme. Avec vue panoramique sur
+              le village naturiste, Port Ambonne et la Méditerranée,
+              le rooftop de Vibes Resort est une île privée, où
+              le temps qui passe se déguste avec raffinement.
+               </p>
 
-            <p class="p-font2"> Appréciez un cocktail dans la piscine, profitez des
-            spas à débordement ou du bar lounge, prélassez-vous
-            sur la large plage en bois, à l’ombre des palmiers… et
-            c’est toute la douceur du Sud qui s’offre à vous.</p>
+               <p class="p-font2"> Appréciez un cocktail dans la piscine, profitez des spas à débordement ou du bar lounge, prélassez-vous sur la large plage en bois, à l’ombre des palmiers… et
+              c’est toute la douceur du Sud qui s’offre à vous.</p>
+
 
 
           </DIV>
 
-
         </div>
-
       </div>
 
 
     </section>
-    <!-- ======= Services Section =======
-    <section id="services" class="services">
-      <div class="container">
-
-        <div class="row">
-
-          <div class="col-lg-4 col-md-6 icon-box" data-aos="fade-up">
-            <h4 class="title"><a href="">Lorem Ipsum</a></h4>
-            <p class="description">Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident</p>
-          </div>
-          <div class="col-lg-4 col-md-6 icon-box" data-aos="fade-up" data-aos-delay="100">
-            <h4 class="title"><a href="">Dolor Sitema</a></h4>
-            <p class="description">Minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat tarad limino ata</p>
-          </div>
-          <div class="col-lg-4 col-md-6 icon-box" data-aos="fade-up" data-aos-delay="200">
-            <h4 class="title"><a href="">Sed ut perspiciatis</a></h4>
-            <p class="description">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur</p>
-          </div>
-
-        </div>
-
-      </div>
-    </section><!-- End Services Section -->
 
 
-  <section >
+    <section >
 
 
     <div class="jumbotron-invest active ">
 
       <div class="container invest text-center" style="padding:6em;">
-          <h2 class="mb-4 pb-4"> DEVENIR PROPRIÉTAIRE</h2>
+          <h2 class="mb-4 pb-4">Devenir Propriétaire</h2>
 
           <p class="p-font2">
             Nous vous offrons la possibilité d’acquérir une chambre
@@ -351,7 +333,7 @@ le temps qui passe se déguste avec raffinement.
           </div>
 
 
-          <p class="p-font2">
+          <p class="p-font2 pb-4 mb-4">
 
           Si ces conditions sont réunies, l’ensemble de la prestation
           (assimilée à une activité hôtelière) est soumis à la TVA.
@@ -365,6 +347,10 @@ le temps qui passe se déguste avec raffinement.
           détention, sauf si le nouvel acquéreur reprend le mandat
           de gestion jusqu’au terme des 20 ans.</p>
 
+
+          <%= link_to "Contactez-nous", root_path(anchor: 'contact'), class: "btn-get-started animate__animated animate__fadeInUp scrollto" %>
+          <%= link_to "Téléchargez la Plaquette", new_plaquette_path, class: "btn-invers animate__animated animate__fadeInUp scrollto" %>
+
       </DIV>
 
     </div>
@@ -373,24 +359,19 @@ le temps qui passe se déguste avec raffinement.
 
 
   <!-- ======= Contact Us Section ======= -->
-    <section id="contact" class="contact">
+    <section class="contact">
       <div class="container">
 
-          <h2>Vous êtes séduit par notre résidence ? Contactez-nous.</h2>
+          <h2 class="pb-4 mb-4" id="contact">Vous êtes séduit par notre résidence ? Contactez-nous.</h2>
 
         <div class="row">
 
           <div class="col-lg-6 pt-4" data-aos="fade-up">
 
-              <h3><i class="far fa-paper-plane pr-4"></i>Contactez-nous par e-mail</h3>
-              <p>info@example.com<br>contact@example.com</p>
-
               <h3><i class="fas fa-phone pr-4"></i> Appelez-nous</h3>
               <p>04 44 44 44 44<br>04 44 44 44 44</p>
 
-              <h3><i class="bx bx-map pr-4"></i>Adresse</h3>
-              <p>A108 Jon Doe, Cap d'Agde</p>
-
+              <p class="p-font"><i> En cochant cette case et en soumettant ce formulaire, vous acceptez que vos données personnelles soient utilisées pour vous contacter dans le cadre de votre demande indiquée dans ce formulaire. Aucun autre traitement ne sera effectué avec vos informations.</i></p>
           </div>
 
 
