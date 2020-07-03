@@ -9,7 +9,7 @@ class ContactController < ApplicationController
 
   def create
 
-    @contact = Contact.create(name: params[:name] , firstname: params[:firstname] ,email: params[:email], message: params[:message],room: params[:room], suite: params[:suite])
+    @contact = Contact.create(name: params[:name] , firstname: params[:firstname] ,email: params[:email], message: params[:message], phone: params[:phone], room: params[:room], suite: params[:suite])
 
    if @contact.save
       redirect_to root_path
