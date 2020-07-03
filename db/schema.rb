@@ -20,6 +20,9 @@ ActiveRecord::Schema.define(version: 2020_07_02_130314) do
     t.string "name"
     t.string "firstname"
     t.text "message"
+    t.string "phone"
+    t.boolean "room"
+    t.boolean "suite"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end

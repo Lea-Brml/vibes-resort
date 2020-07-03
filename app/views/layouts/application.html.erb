@@ -18,15 +18,15 @@
     <!-- ======= Header ======= -->
     <header id="header">
 
+
       <div class="container">
 
-        <div class="logo float-left pt-3">
-          <%= link_to image_tag( 'logo-min.png'), root_path%>
+        <div class="logo float-left pt-1">
+          <%= link_to image_tag( 'vibes-resort-logo2.png'), root_path%>
         </div>
 
         <nav class="nav-menu float-right d-none d-lg-block pt-3 ">
           <ul>
-            <li><%= link_to "Vibes Resort", root_path %></li>
             <li><%= link_to "Le Village", root_path(anchor:"village") %></li>
             <li><%= link_to "L'Emplacement", root_path(anchor:"emplacement") %></li>
             <li><%= link_to "L'Architecture", root_path(anchor:"architecture") %></li>
@@ -37,12 +37,13 @@
         </nav><!-- .nav-menu -->
 
       </div>
+
     </header><!-- End Header -->
 
 
     <%= yield %>
 
-    <i class="fas fa-chevron-circle-up btn-up fa-2x"></i>
+    <a href="#"><i class="fas fa-chevron-circle-up btn-up fa-2x"></i></a>
 
 
     <!-- ======= Footer ======= -->

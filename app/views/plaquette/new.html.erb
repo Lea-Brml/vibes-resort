@@ -4,10 +4,19 @@
 
   </div>
 
+
   <div class="col-6">
 
     <div class="container" style="width:90%;">
       <h1 class="pb-4">Téléchargez la plaquette<br> de Vibes Resort</h1>
+
+
+          <% flash.each do |type, msg| %>
+            <div class="alert alert-info margin-top:100px;" style="z-index:1">
+              <%= msg %>
+            </div>
+          <% end %>
+
 
       <p class="p-font pt-4 pb-4">Pour télécharger la plaquette de notre résidence Vibes Resort située au Cap d'Agde, veuillez remplir le formulaire ci-dessous.  </p>
 

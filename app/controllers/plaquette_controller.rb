@@ -10,10 +10,9 @@ class PlaquetteController < ApplicationController
 
    if @plaquette.save
       render "show"
-      flash[:success] = "Votre message a bien été envoyé !"
     else
       render "new"
-      flash[:danger] = "Une erreur s'est produits. Votre message ne s'est pas envoyé, veuillez réessayer."
+      flash[:danger] = "Une erreur s'est produite. Veuillez saisir une adresse e-mail valide et réessayer."
     end
 
 

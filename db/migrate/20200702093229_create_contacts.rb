@@ -5,6 +5,9 @@ class CreateContacts < ActiveRecord::Migration[5.2]
       t.string "name"
       t.string "firstname"
       t.text "message"
+      t.string "phone"
+      t.boolean "room"
+      t.boolean "suite"
       t.timestamps
     end
   end
