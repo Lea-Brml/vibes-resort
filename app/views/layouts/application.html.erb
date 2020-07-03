@@ -1,63 +1,68 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>VibesResort2</title>
-    <%= csrf_meta_tags %>
-    <%= csp_meta_tag %>
+<head>
+  <title>VibesResort2</title>
+  <%= csrf_meta_tags %>
+  <%= csp_meta_tag %>
 
-    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
-    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
 
-    <script src="https://kit.fontawesome.com/2f609438b2.js" crossorigin="anonymous"></script>
+  <script src="https://kit.fontawesome.com/2f609438b2.js" crossorigin="anonymous"></script>
 
-  </head>
+</head>
 
-  <body>
-
-
-    <!-- ======= Header ======= -->
-    <header id="header">
+<body>
 
 
-      <div class="container">
+  <!-- ======= Header ======= -->
+  <header id="header">
 
-        <div class="logo float-left pt-1">
-          <%= link_to image_tag( 'vibes-resort-logo2.png'), root_path%>
-        </div>
-
-        <nav class="nav-menu float-right d-none d-lg-block pt-3 ">
-          <ul>
-            <li><%= link_to "Le Village", root_path(anchor:"village") %></li>
-            <li><%= link_to "L'Emplacement", root_path(anchor:"emplacement") %></li>
-            <li><%= link_to "L'Architecture", root_path(anchor:"architecture") %></li>
-            <li><%= link_to "Les Appartements", root_path(anchor:"appartements") %></li>
-            <li><%= link_to "Le Rooftop", root_path(anchor:"rooftop") %></li>
-            <li><%= link_to "Contactez-nous", root_path(anchor:"contact") %></li>
-          </ul>
-        </nav><!-- .nav-menu -->
-
+    <div class=" row navbar">
+      <div class="col-3 ml-4 pl-4">
+        <%= link_to image_tag( 'vibes-resort-logo2.png'), root_path%>
       </div>
 
-    </header><!-- End Header -->
+      <div class="col-8" class="container" style="justify-content:space-between;">
+        <ul >
+          <li style=" display: inline-block;
+          vertical-align: middle"><%= link_to "Le Village", root_path(anchor:"village") , class:"p-2 nav-item"%></li>
+          <li style="  display: inline-block;
+          vertical-align: middle"><%= link_to "L'Architecture", root_path(anchor:"architecture"), class:"p-2 nav-item" %></li>
+          <li style="  display: inline-block;
+          vertical-align: middle"><%= link_to "Les Appartements", root_path(anchor:"appartements") , class:"p-2 nav-item"%></li>
+          <li style="  display: inline-block;
+          vertical-align: middle"><%= link_to "Le Rooftop", root_path(anchor:"rooftop") , class:"p-2 nav-item"%></li>
+          <li style="  display: inline-block;
+          vertical-align: middle"><%= link_to "Devenir Propriétaire", root_path(anchor:"proprietaire"), class:"p-2 nav-item" %></li>
+          <li style="  display: inline-block;
+          vertical-align: middle"><%= link_to "Contactez-nous", root_path(anchor:"contact"), class:"p-2 btn-get-started" %></li>
+        </ul>
+      </div>
 
-
-    <%= yield %>
-
-    <a href="#"><i class="fas fa-chevron-circle-up btn-up fa-2x"></i></a>
-
-
-    <!-- ======= Footer ======= -->
-<footer id="footer">
-
-  <div class="container">
-    <div class="copyright">
-      Résidence <span>Vibes Resort</span>, Cap d'Agde
     </div>
-    <div class="credits">
-      &copy; Copyright. All Rights Reserved
-    </div>
-  </div>
-</footer><!-- End Footer -->
 
-  </body>
+
+  </header><!-- End Header -->
+
+
+  <%= yield %>
+
+  <a href="#"><i class="fas fa-chevron-circle-up btn-up fa-2x"></i></a>
+
+
+  <!-- ======= Footer ======= -->
+  <footer id="footer">
+
+    <div class="container">
+      <div class="copyright">
+        Résidence <span>Vibes Resort</span>, Cap d'Agde
+      </div>
+      <div class="credits">
+        &copy; Copyright. All Rights Reserved
+      </div>
+    </div>
+  </footer><!-- End Footer -->
+
+</body>
 </html>

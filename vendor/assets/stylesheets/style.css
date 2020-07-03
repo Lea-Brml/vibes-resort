@@ -92,6 +92,14 @@ p {
   border-color: #235E70;
 }
 
+.nav-item {
+  color: grey;
+  font-weight:lighter;
+}
+
+.navbar{
+  height:3em;
+}
 
 
 /*--------------------------------------------------------------
@@ -172,9 +180,7 @@ p {
 # Header
 --------------------------------------------------------------*/
 #header {
-  height: 70px;
-  transition: all 0.5s;
-  transition: all 0.5s;
+  height: 5em;
   padding: 10px 0;
   background: #fff;
   z-index: 997;
