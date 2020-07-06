@@ -61,6 +61,11 @@ p {
   height:auto;
 }
 
+.jumbotron-blue {
+  background-color: #F5F9FC;
+}
+
+
 .jumbotron-archi {
   width: 100%;
   background-size: cover;
