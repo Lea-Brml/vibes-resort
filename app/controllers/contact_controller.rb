@@ -13,7 +13,7 @@ before_action :authenticate_user!, only: [:index]
     @contact = Contact.create(name: params[:name] , firstname: params[:firstname] ,email: params[:email], message: params[:message], phone: params[:phone], room: params[:room], suite: params[:suite])
 
    if @contact.save
-      redirect_to root_path
+      render "show"
       flash[:success] = "Votre demande de contact nous a bien été transmise. Nous vous recontacterons dans les meilleurs délais."
     else
       redirect_to root_path( :anchor => 'contact')
@@ -23,6 +23,8 @@ before_action :authenticate_user!, only: [:index]
   end
 
   def show
+
+    @contact = Contact.find(params[:id])
 
   end
 

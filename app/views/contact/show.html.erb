@@ -1,0 +1,23 @@
+<div class="row align-items-center">
+
+  <div class="col-6" style="background-image:url(<%= asset_path 'vibes-resort-3.jpg' %>); background-position: center right; min-height:100vh;">
+
+  </div>
+
+  <div class="col-6">
+
+    <div class="container">
+      <h1 class="pb-4 pl-4 pr-4 ">Merci !</h1>
+
+      <p class="p-font pl-4 pr-4 pt-4 pb-2"><%=@contact.firstname%>, nous avons bien reçu votre demande de contact ! Nous vous recontacterons très rapidement afin d'échanger avec vous sur votre projet.  </p>
+
+    </div>
+
+      <div class="container ">
+        <p class="p-font pt-4 pb-4 pl-4 pr-4 ">Si vous le désirez, vous pouvez également télécharger ci-dessous la plaquette intéractive du <strong>Vibes Resort</strong> </p>
+        <%= link_to "Télécharger la plaquette", asset_path("plaquette-vibes-resort.pdf"), target: "_blank", class:"btn-get-started animate__animated animate__fadeInUp scrollto" %>
+      </div>
+
+  </div>
+
+</div>

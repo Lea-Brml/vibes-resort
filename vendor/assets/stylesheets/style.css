@@ -63,6 +63,7 @@ p {
 
 .jumbotron-blue {
   background-color: #F5F9FC;
+  height:auto;
 }
 
 
@@ -116,7 +117,7 @@ p {
 }
 
 .padding2 {
-  padding-bottom:2em;
+  padding-bottom:1em;
 }
 
 /*--------------------------------------------------------------
