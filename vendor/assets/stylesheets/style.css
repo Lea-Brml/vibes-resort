@@ -120,6 +120,7 @@ p {
   padding-bottom:1em;
 }
 
+
 /*--------------------------------------------------------------
 # Back to top button
 --------------------------------------------------------------*/
@@ -533,7 +534,7 @@ p {
 #hero .carousel-inner .carousel-item-next.carousel-item-left,
 #hero .carousel-inner .carousel-item-prev.carousel-item-right {
   opacity: 1;
-  transition: 0.5s;
+  transition: 0.9s;
 }
 
 #hero .carousel-inner .carousel-item-next,
