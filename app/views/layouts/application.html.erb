@@ -39,7 +39,7 @@
           <li style="  display: inline-block;
           vertical-align: middle"><%= link_to "Devenir Propriétaire", root_path(anchor:"proprietaire"), class:"p-2 nav-item" %></li>
           <li style="  display: inline-block;
-          vertical-align: middle"><%= link_to "Contactez-nous", root_path(anchor:"contact"), class:"p-2 btn-get-started" %></li>
+          vertical-align: middle"><%= link_to "Nous contacter", root_path(anchor:"contact"), class:"p-2 btn-get-started" %></li>
           <li style="  display: inline-block;
           vertical-align: middle"><%= link_to "Télécharger Plaquette", new_plaquette_path, class:"p-2 btn-invers" %></li>
         </ul>
@@ -68,9 +68,12 @@
         Illustrations à caractère d’ambiance © A+ Architecture, Golem Images, We Love Design – Photos © Shutterstock
       </div>
       <div class="credits">
-        <%= link_to "Se connecter", user_session_path %>
+        <% if user_signed_in?%>
+        <%= link_to "Back-Office",         contact_index_path, class:"pr-4" %>
         <%= link_to "Se déconnecter", destroy_user_session_path, method: :delete%>
-
+        <%else%>
+        <%= link_to "Se connecter", user_session_path %>
+        <%end%>
       </div>
     </div>
   </footer><!-- End Footer -->

@@ -74,8 +74,17 @@ p {
   height:auto;
 }
 
+.jumbotron-grey {
+  background-color: #f3f4f8	;
+}
+
 .archi {
           background: rgba(255, 255, 255, 0.8);
+          margin-top:6em;
+          margin-bottom: 6em;
+}
+
+.archi2 {
           margin-top:6em;
           margin-bottom: 6em;
 }
@@ -101,6 +110,9 @@ p {
   height:3em;
 }
 
+.padding2 {
+  padding-bottom:2em;
+}
 
 /*--------------------------------------------------------------
 # Back to top button

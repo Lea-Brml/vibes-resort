@@ -23,8 +23,8 @@
                 <p style="font-size:18px;">Vibes Resort, nouvelle résidence au Cap d'Agde, est né de l’idée d’offrir un lieu d’exception
 à la fois intime et convivial, avec des équipements de
 haut standing et un niveau de confort sans pareil.</p>
-                <%= link_to "Contactez-nous", root_path(anchor: 'contact'), class: "btn-get-started" %>
-                <%= link_to "Téléchargez la Plaquette", new_plaquette_path, class: "btn-invers " %>
+                <%= link_to "Nous Contacter", root_path(anchor: 'contact'), class: "btn-get-started" %>
+                <%= link_to "Télécharger la Plaquette", new_plaquette_path, class: "btn-invers " %>
               </div>
             </div>
           </div>
@@ -44,8 +44,8 @@ haut standing et un niveau de confort sans pareil.</p>
                 <p style="font-size:18px;" >Vibes Resort, nouvelle résidence au Cap d'Agde, est né de l’idée d’offrir un lieu d’exception
 à la fois intime et convivial, avec des équipements de
 haut standing et un niveau de confort sans pareil.</p>
-                <%= link_to "Contactez-nous", root_path(anchor: 'contact'), class: "btn-get-started " %>
-                <%= link_to "Téléchargez la Plaquette", new_plaquette_path, class: "btn-invers " %>
+                <%= link_to "Nous Contacter", root_path(anchor: 'contact'), class: "btn-get-started " %>
+                <%= link_to "Télécharger la Plaquette", new_plaquette_path, class: "btn-invers " %>
               </div>
             </div>
           </div>
@@ -65,8 +65,8 @@ haut standing et un niveau de confort sans pareil.</p>
                 <p style="font-size:18px;" >Vibes Resort, nouvelle résidence au Cap d'Agde, est né de l’idée d’offrir un lieu d’exception
 à la fois intime et convivial, avec des équipements de
 haut standing et un niveau de confort sans pareil.</p>
-                <%= link_to "Contactez-nous", root_path(anchor: 'contact'), class: "btn-get-started" %>
-                <%= link_to "Téléchargez la Plaquette", new_plaquette_path, class: "btn-invers" %>
+                <%= link_to "Nous Contacter", root_path(anchor: 'contact'), class: "btn-get-started" %>
+                <%= link_to "Télécharger la Plaquette", new_plaquette_path, class: "btn-invers" %>
               </div>
             </div>
           </div>
@@ -114,7 +114,7 @@ haut standing et un niveau de confort sans pareil.</p>
             appartements privés, piscine et jacuzzis, bar lounge
             et restaurant, sur une terrasse panoramique à la vue imprenable. Un véritable appel au lâcher prise et à la volupté sur fond azur !</p>
 
-            <%= link_to "Téléchargez la Plaquette", new_plaquette_path, class: "btn-invers animate__animated animate__fadeInUp scrollto text-center mx-auto" %>
+            <%= link_to "Télécharger la Plaquette", new_plaquette_path, class: "btn-invers animate__animated animate__fadeInUp scrollto text-center mx-auto" %>
 
           </div>
 
@@ -125,15 +125,16 @@ haut standing et un niveau de confort sans pareil.</p>
 
 
       <div class="jumbotron ">
-        <div class="row p-4 m-4" >
+        <div class="row " >
 
           <div class="col-6">
 
-            <div id="carouselExampleIndicators3" class="carousel slide" data-ride="carousel">
+            <div id="carouselExampleIndicators3" class="carousel slide pb-4 mb-4" data-ride="carousel">
           <ol class="carousel-indicators">
             <li data-target="#carouselExampleIndicators3" data-slide-to="0" class="active"></li>
             <li data-target="#carouselExampleIndicators3" data-slide-to="1"></li>
             <li data-target="#carouselExampleIndicators3" data-slide-to="2"></li>
+            <li data-target="#carouselExampleIndicators3" data-slide-to="3"></li>
           </ol>
           <div class="carousel-inner">
             <div class="carousel-item active">
@@ -144,6 +145,9 @@ haut standing et un niveau de confort sans pareil.</p>
             </div>
             <div class="carousel-item">
               <%=image_tag("port-cap-agde.jpg", :class => "d-block w-100", :style => " height: 25em; width: 100%; object-fit: cover;")%>
+            </div>
+            <div class="carousel-item">
+              <%=image_tag("port-cap-agde2.jpg", :class => "d-block w-100", :style => " height: 25em; width: 100%; object-fit: cover;")%>
             </div>
           </div>
           <a class="carousel-control-prev" href="#carouselExampleIndicators3" role="button" data-slide="prev">
@@ -202,21 +206,111 @@ futuriste à l’esthétisme pur, le mouvement perpétuel
 de la mer et le charme de l’<strong>éternel féminin</strong>. </p>
 
 
-        <%= link_to "Contactez-nous", root_path(anchor: 'contact'), class: "btn-get-started" %>
-        <%= link_to "Téléchargez la Plaquette", new_plaquette_path, class: "btn-invers animate__animated animate__fadeInUp scrollto" %>
+        <%= link_to "Nous Contacter", root_path(anchor: 'contact'), class: "btn-get-started" %>
+        <%= link_to "Télécharger la Plaquette", new_plaquette_path, class: "btn-invers animate__animated animate__fadeInUp scrollto" %>
 
 
         </div>
       </div>
 
 
-      <section>
 
-      <div class="row pt-4 mt-4" id="appartements">
+      <div class="row pt-4  pb-4  jumbotron-grey" id="appartements">
+
+        <div class="col-6 col-sm-12 col-lg-6 col-md-6 pb-4">
+
+
+          <div class="container archi2  jumbotron-grey  text-center pl-4 ml-4"  data-aos="fade-up" data-aos-delay="100" id="rooftop">
+              <h2 class="mb-4 pb-4"> Le Rooftop </h2>
+
+              <p class="p-font2">À l’intérieur de la résidence, c’est le domaine privé
+              du luxe et de l’hédonisme. Avec vue panoramique sur
+              le <strong>village naturiste, Port Ambonne et la Méditerranée</strong>,
+              le rooftop de <strong>Vibes Resort est une île privée</strong>, où
+              le temps qui passe se déguste avec raffinement.
+               </p>
+
+               <p class="p-font2"> Appréciez un cocktail dans la piscine, profitez des spas à débordement ou du bar lounge, prélassez-vous sur la large plage en bois, à l’ombre des palmiers… <strong>et
+              c’est toute la douceur du Sud qui s’offre à vous</strong>.</p>
+
+          </DIV>
+
+        </div>
+
+
+        <div class="col-6 col-sm-12 col-lg-6 col-md-6 padding2">
+
+          <div id="carouselExampleIndicators2" class=" carousel slide pt-4 mt-4 pb-4" data-ride="carousel">
+        <ol class="carousel-indicators">
+          <li data-target="#carouselExampleIndicators2" data-slide-to="0" class="active"></li>
+          <li data-target="#carouselExampleIndicators2" data-slide-to="1"></li>
+          <li data-target="#carouselExampleIndicators2" data-slide-to="2"></li>
+          <li data-target="#carouselExampleIndicators2" data-slide-to="3"></li>
+        </ol>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <%=image_tag("vibes-resort-3.jpg", :class => "d-block w-100", :style => " height: 25em; width: 100%; object-fit: cover;")%>
+          </div>
+          <div class="carousel-item">
+            <%=image_tag("pool-1.jpg", :class => "d-block w-100", :style => " height: 25em; width: 100%; object-fit: cover;")%>
+          </div>
+          <div class="carousel-item">
+            <%=image_tag("pool-2.jpg", :class => "d-block w-100", :style => " height: 25em; width: 100%; object-fit: cover;")%>
+          </div>
+          <div class="carousel-item">
+            <%=image_tag("pool.jpg", :class => "d-block w-100", :style => " height: 25em; width: 100%; object-fit: cover;")%>
+          </div>
+        </div>
+        <a class="carousel-control-prev" href="#carouselExampleIndicators2" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleIndicators2" role="button" data-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
+      </div>
+
+
+
+        </div>
+
+      </div>
+
+
+      <div class="row " style="padding:2em;">
+
+        <div class="col-6 col-sm-12 col-lg-6 col-md-6 pt-4 mt-4 pb-4 mb-4">
+
+          <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                <ol class="carousel-indicators">
+                  <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                  <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                </ol>
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <%=image_tag("Chambre-HD.jpg", :class => "d-block w-100", :style => " height: 25em; width: 100%; object-fit: cover;")%>
+                  </div>
+                  <div class="carousel-item">
+                    <%=image_tag("salle-bain.jpg", :class => "d-block w-100", :style => " height: 25em; width: 100%; object-fit: cover;")%>
+                  </div>
+                </div>
+                <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="sr-only">Next</span>
+                </a>
+              </div>
+
+        </div>
+
 
         <div class="col-6 col-sm-12 col-lg-6 col-md-6">
 
-          <div class="container archi text-center pl-4 ml-4 pr-4 mr-4"  data-aos="fade-up" data-aos-delay="100">
+          <div class="container text-center pl-4 ml-4 pr-4 mr-4 archi2"  data-aos="fade-up" data-aos-delay="100">
               <h2 class="mb-4 pb-4"> Les Appartements </h2>
 
               <p class="p-font2"> Rejoignez vos <strong>appartements privés et profitez
@@ -234,99 +328,8 @@ de la mer et le charme de l’<strong>éternel féminin</strong>. </p>
           </div>
 
         </div>
-
-
-        <div class="col-6 col-sm-12 col-lg-6 col-md-6">
-
-
-              <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-            <ol class="carousel-indicators">
-              <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-              <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-            </ol>
-            <div class="carousel-inner">
-              <div class="carousel-item active">
-                <%=image_tag("Chambre-HD.jpg", :class => "d-block w-100", :style => " height: 25em; width: 100%; object-fit: cover;")%>
-              </div>
-              <div class="carousel-item">
-                <%=image_tag("salle-bain.jpg", :class => "d-block w-100", :style => " height: 25em; width: 100%; object-fit: cover;")%>
-              </div>
-            </div>
-            <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-              <span class="sr-only">Previous</span>
-            </a>
-            <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-              <span class="carousel-control-next-icon" aria-hidden="true"></span>
-              <span class="sr-only">Next</span>
-            </a>
-          </div>
-
-        </div>
-
       </div>
 
-
-      <div class="row" style="padding-top:2em;">
-
-        <div class="col-6 col-sm-12 col-lg-6 col-md-6">
-
-
-              <div id="carouselExampleIndicators2" class="carousel slide" data-ride="carousel">
-            <ol class="carousel-indicators">
-              <li data-target="#carouselExampleIndicators2" data-slide-to="0" class="active"></li>
-              <li data-target="#carouselExampleIndicators2" data-slide-to="1"></li>
-              <li data-target="#carouselExampleIndicators2" data-slide-to="2"></li>
-            </ol>
-            <div class="carousel-inner">
-              <div class="carousel-item active">
-                <%=image_tag("vibes-resort-3.jpg", :class => "d-block w-100", :style => " height: 25em; width: 100%; object-fit: cover;")%>
-              </div>
-              <div class="carousel-item">
-                <%=image_tag("pool-1.jpg", :class => "d-block w-100", :style => " height: 25em; width: 100%; object-fit: cover;")%>
-              </div>
-              <div class="carousel-item">
-                <%=image_tag("pool-2.jpg", :class => "d-block w-100", :style => " height: 25em; width: 100%; object-fit: cover;")%>
-              </div>
-            </div>
-            <a class="carousel-control-prev" href="#carouselExampleIndicators2" role="button" data-slide="prev">
-              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-              <span class="sr-only">Previous</span>
-            </a>
-            <a class="carousel-control-next" href="#carouselExampleIndicators2" role="button" data-slide="next">
-              <span class="carousel-control-next-icon" aria-hidden="true"></span>
-              <span class="sr-only">Next</span>
-            </a>
-          </div>
-
-        </div>
-
-
-        <div class="col-6 col-sm-12 col-lg-6 col-md-6">
-
-          <div class="container archi text-center"  data-aos="fade-up" data-aos-delay="100" id="rooftop">
-              <h2 class="mb-4 pb-4"> Le Rooftop </h2>
-
-              <p class="p-font2">À l’intérieur de la résidence, c’est le domaine privé
-              du luxe et de l’hédonisme. Avec vue panoramique sur
-              le <strong>village naturiste, Port Ambonne et la Méditerranée</strong>,
-              le rooftop de <strong>Vibes Resort est une île privée</strong>, où
-              le temps qui passe se déguste avec raffinement.
-               </p>
-
-               <p class="p-font2"> Appréciez un cocktail dans la piscine, profitez des spas à débordement ou du bar lounge, prélassez-vous sur la large plage en bois, à l’ombre des palmiers… <strong>et
-              c’est toute la douceur du Sud qui s’offre à vous</strong>.</p>
-
-
-
-          </DIV>
-
-        </div>
-      </div>
-
-      </section>
-
-    <section >
 
 
     <div class="jumbotron-invest active ">
@@ -381,14 +384,13 @@ de la mer et le charme de l’<strong>éternel féminin</strong>. </p>
           de gestion jusqu’au terme des 20 ans.</p>
 
 
-          <%= link_to "Contactez-nous", root_path(anchor: 'contact'), class: "btn-get-started " %>
-          <%= link_to "Téléchargez la Plaquette", new_plaquette_path, class: "btn-invers animate__animated animate__fadeInUp scrollto" %>
+          <%= link_to "Nous Contacter", root_path(anchor: 'contact'), class: "btn-get-started " %>
+          <%= link_to "Télécharger la Plaquette", new_plaquette_path, class: "btn-invers animate__animated animate__fadeInUp scrollto" %>
 
       </DIV>
 
     </div>
 
-  </section>
 
 
   <!-- ======= Contact Us Section ======= -->
