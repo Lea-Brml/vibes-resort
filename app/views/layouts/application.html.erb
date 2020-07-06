@@ -56,14 +56,20 @@
 
 
   <!-- ======= Footer ======= -->
+
   <footer id="footer">
 
     <div class="container">
       <div class="copyright">
-        Résidence <span>Vibes Resort</span>, Cap d'Agde
+        Tous droits réservés – <strong>SCCV VIBES RESORT</strong> – 790 452 452 RCS Béziers
       </div>
       <div class="credits">
-        &copy; Copyright. All Rights Reserved
+        Illustrations à caractère d’ambiance © A+ Architecture, Golem Images, We Love Design – Photos © Shutterstock
+      </div>
+      <div class="credits">
+        <%= link_to "Se connecter", user_session_path %>
+        <%= link_to "Se déconnecter", destroy_user_session_path, method: :delete%>
+
       </div>
     </div>
   </footer><!-- End Footer -->
