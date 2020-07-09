@@ -23,8 +23,8 @@
                 <p style="font-size:18px;">Vibes Resort, nouvelle résidence au Cap d'Agde, est né de l’idée d’offrir un lieu d’exception
 à la fois intime et convivial, avec des équipements de
 haut standing et un niveau de confort sans pareil.</p>
-                <%= link_to "Nous Contacter", root_path(anchor: 'contact'), class: "btn-get-started" %>
-                <%= link_to "Télécharger la Plaquette", new_plaquette_path, class: "btn-invers " %>
+                <%= link_to "Nous contacter", root_path(anchor: 'contact'), class: "btn-get-started" %>
+                <%= link_to "Télécharger la plaquette", new_plaquette_path, class: "btn-invers " %>
               </div>
             </div>
           </div>
@@ -44,8 +44,8 @@ haut standing et un niveau de confort sans pareil.</p>
                 <p style="font-size:18px;" >Vibes Resort, nouvelle résidence au Cap d'Agde, est né de l’idée d’offrir un lieu d’exception
 à la fois intime et convivial, avec des équipements de
 haut standing et un niveau de confort sans pareil.</p>
-                <%= link_to "Nous Contacter", root_path(anchor: 'contact'), class: "btn-get-started " %>
-                <%= link_to "Télécharger la Plaquette", new_plaquette_path, class: "btn-invers " %>
+                <%= link_to "Nous contacter", root_path(anchor: 'contact'), class: "btn-get-started " %>
+                <%= link_to "Télécharger la plaquette", new_plaquette_path, class: "btn-invers " %>
               </div>
             </div>
           </div>
@@ -65,8 +65,8 @@ haut standing et un niveau de confort sans pareil.</p>
                 <p style="font-size:18px;" >Vibes Resort, nouvelle résidence au Cap d'Agde, est né de l’idée d’offrir un lieu d’exception
 à la fois intime et convivial, avec des équipements de
 haut standing et un niveau de confort sans pareil.</p>
-                <%= link_to "Nous Contacter", root_path(anchor: 'contact'), class: "btn-get-started" %>
-                <%= link_to "Télécharger la Plaquette", new_plaquette_path, class: "btn-invers" %>
+                <%= link_to "Nous contacter", root_path(anchor: 'contact'), class: "btn-get-started" %>
+                <%= link_to "Télécharger la plaquette", new_plaquette_path, class: "btn-invers" %>
               </div>
             </div>
           </div>
@@ -114,7 +114,7 @@ haut standing et un niveau de confort sans pareil.</p>
             appartements privés, piscine et jacuzzis, bar lounge
             et restaurant, sur une terrasse panoramique à la vue imprenable. Un véritable appel au lâcher prise et à la volupté sur fond azur !</p>
 
-            <%= link_to "Télécharger la Plaquette", new_plaquette_path, class: "btn-invers animate__animated animate__fadeInUp scrollto text-center mx-auto" %>
+            <%= link_to "Télécharger la plaquette", new_plaquette_path, class: "btn-invers animate__animated animate__fadeInUp scrollto text-center mx-auto", id:"village"%>
 
           </div>
 
@@ -138,16 +138,16 @@ haut standing et un niveau de confort sans pareil.</p>
           </ol>
           <div class="carousel-inner">
             <div class="carousel-item active">
-              <%=image_tag("village-naturiste-cap-agde.jpg", :class => "d-block w-100", :style => " height: 25em; width: 100%; object-fit: cover;")%>
+              <%=image_tag("village-naturiste-cap-agde.jpg", :class => "d-block w-100", :style => " height: 28em; width: 100%; object-fit: cover;")%>
             </div>
             <div class="carousel-item">
-              <%=image_tag("plage-cap-agde.jpg", :class => "d-block w-100", :style => " height: 25em; width: 100%; object-fit: cover;")%>
+              <%=image_tag("plage-cap-agde.jpg", :class => "d-block w-100", :style => " height: 28em; width: 100%; object-fit: cover;")%>
             </div>
             <div class="carousel-item">
-              <%=image_tag("port-cap-agde.jpg", :class => "d-block w-100", :style => " height: 25em; width: 100%; object-fit: cover;")%>
+              <%=image_tag("port-cap-agde.jpg", :class => "d-block w-100", :style => " height: 28em; width: 100%; object-fit: cover;")%>
             </div>
             <div class="carousel-item">
-              <%=image_tag("port-cap-agde2.jpg", :class => "d-block w-100", :style => " height: 25em; width: 100%; object-fit: cover;")%>
+              <%=image_tag("port-cap-agde2.jpg", :class => "d-block w-100", :style => " height: 28em; width: 100%; object-fit: cover;")%>
             </div>
           </div>
           <a class="carousel-control-prev" href="#carouselExampleIndicators3" role="button" data-slide="prev">
@@ -165,7 +165,7 @@ haut standing et un niveau de confort sans pareil.</p>
 
           <div class="col-xs-12 col-sm-12 col-lg-6 col-md-6" >
 
-            <h2 class="text-center" id="village"> Le Village naturiste du Cap d'Agde </h2>
+            <h2 class="text-center"> Le Village naturiste du Cap d'Agde </h2>
 
             <p class="p-font2 pt-4 mt-4 mr-4 pr-4 ml-4 pl-4"> Créé dans les années 1970 aux portes de la réserve
 naturelle du Bagnas, le <strong>village naturiste du Cap
@@ -193,10 +193,10 @@ aménagées, sans oublier un port de plaisance de
 
 
 
-      <div class="jumbotron-archi active " style="background-image:url(<%= asset_path 'vibes-resort-1.jpg' %>) ; background-position:bottom; margin-top:-2em; ">
+      <div id="architecture" class="jumbotron-archi active " style="background-image:url(<%= asset_path 'vibes-resort-1.jpg' %>) ; background-position:bottom; margin-top:-2em;">
 
         <div class="container archi text-center" style="padding:6em;" >
-            <h2 class="mb-4 pb-4" id="architecture"> L'Architecture</h2>
+            <h2 class="mb-4 pb-4" > L'Architecture</h2>
 
             <p class="p-font3" > Signé par l’<strong>agence montpelliéraine <a href="http://www.aplus-architecture.com/agence/presentation/" target=_blank">A+ Architecture</a></strong>,
 le concept architectural de la résidence trouve son
@@ -206,8 +206,8 @@ futuriste à l’esthétisme pur, le mouvement perpétuel
 de la mer et le charme de l’<strong>éternel féminin</strong>. </p>
 
 
-        <%= link_to "Nous Contacter", root_path(anchor: 'contact'), class: "btn-get-started" %>
-        <%= link_to "Télécharger la Plaquette", new_plaquette_path, class: "btn-invers animate__animated animate__fadeInUp scrollto" %>
+        <%= link_to "Nous contacter", root_path(anchor: 'contact'), class: "btn-get-started" %>
+        <%= link_to "Télécharger la plaquette", new_plaquette_path, class: "btn-invers animate__animated animate__fadeInUp scrollto" %>
 
 
         </div>
@@ -249,16 +249,16 @@ de la mer et le charme de l’<strong>éternel féminin</strong>. </p>
         </ol>
         <div class="carousel-inner" >
           <div class="carousel-item active">
-            <%=image_tag("vibes-resort-3.jpg", :class => "d-block w-100", :style => " height: 25em; width: 100%; object-fit: cover;")%>
+            <%=image_tag("vibes-resort-3.jpg", :class => "d-block w-100", :style => " height: 28em; width: 100%; object-fit: cover;")%>
           </div>
           <div class="carousel-item">
-            <%=image_tag("pool.jpg", :class => "d-block w-100", :style => " height: 25em; width: 100%; object-fit: cover;")%>
+            <%=image_tag("pool.jpg", :class => "d-block w-100", :style => " height: 28em; width: 100%; object-fit: cover;")%>
           </div>
           <div class="carousel-item">
-            <%=image_tag("pool-1.jpg", :class => "d-block w-100", :style => " height: 25em; width: 100%; object-fit: cover;")%>
+            <%=image_tag("pool-1.jpg", :class => "d-block w-100", :style => " height: 28em; width: 100%; object-fit: cover;")%>
           </div>
           <div class="carousel-item">
-            <%=image_tag("pool-2.jpg", :class => "d-block w-100", :style => " height: 25em; width: 100%; object-fit: cover;")%>
+            <%=image_tag("pool-2.jpg", :class => "d-block w-100", :style => " height: 28em; width: 100%; object-fit: cover;")%>
           </div>
         </div>
         <a class="carousel-control-prev" href="#carouselExampleIndicators2" role="button" data-slide="prev">
@@ -289,10 +289,10 @@ de la mer et le charme de l’<strong>éternel féminin</strong>. </p>
                 </ol>
                 <div class="carousel-inner">
                   <div class="carousel-item active">
-                    <%=image_tag("Chambre-HD.jpg", :class => "d-block w-100", :style => " height: 25em; width: 100%; object-fit: cover;")%>
+                    <%=image_tag("Chambre-HD.jpg", :class => "d-block w-100", :style => " height: 28em; width: 100%; object-fit: cover;")%>
                   </div>
                   <div class="carousel-item">
-                    <%=image_tag("salle-bain.jpg", :class => "d-block w-100", :style => " height: 25em; width: 100%; object-fit: cover;")%>
+                    <%=image_tag("salle-bain.jpg", :class => "d-block w-100", :style => " height: 28em; width: 100%; object-fit: cover;")%>
                   </div>
                 </div>
                 <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
@@ -384,8 +384,8 @@ de la mer et le charme de l’<strong>éternel féminin</strong>. </p>
           de gestion jusqu’au terme des 20 ans.</p>
 
 
-          <%= link_to "Nous Contacter", root_path(anchor: 'contact'), class: "btn-get-started " %>
-          <%= link_to "Télécharger la Plaquette", new_plaquette_path, class: "btn-invers animate__animated animate__fadeInUp scrollto" %>
+          <%= link_to "Nous contacter", root_path(anchor: 'contact'), class: "btn-get-started " %>
+          <%= link_to "Télécharger la plaquette", new_plaquette_path, class: "btn-invers animate__animated animate__fadeInUp scrollto" %>
 
       </DIV>
 
@@ -404,9 +404,9 @@ de la mer et le charme de l’<strong>éternel féminin</strong>. </p>
           <div class="col-lg-6 pt-4" data-aos="fade-up" >
 
               <h3><i class="fas fa-phone pr-4 pb-4"></i> Appelez-nous</h3>
-              <p>04 44 44 44 44</p>
+              <p>04 67 57 11 26</p>
 
-              <p class="p-font3 pr-4 mr-4 pt-4 mt-4">Vous êtes intéréssé par <strong>Vibes Resort</strong> ? Vous souhaitez obtenir d'avantage d'informations sur notre résidence ? <strong>Remplissez le formulaire suivant, nous vous re contacterons</strong> !</p>
+              <p class="p-font3 pr-4 mr-4 pt-4 mt-4">Vous êtes intéressé par <strong>Vibes Resort</strong> ? Vous souhaitez obtenir davantage d'informations sur notre résidence ? <strong>Remplissez le formulaire suivant, nous vous recontacterons</strong> !</p>
 
               <p class="p-font4 pr-4 mr-4 pt-4 mt-4"><i> *En soumettant ce formulaire, vous acceptez que vos données personnelles soient utilisées pour vous contacter dans le cadre de votre demande indiquée dans ce formulaire. Aucun autre traitement ne sera effectué avec vos informations.</i></p>
           </div>
@@ -429,12 +429,12 @@ de la mer et le charme de l’<strong>éternel féminin</strong>. </p>
               </div>
               <div class="col-md-6">
                 <div class="form-group">
-                  <%= text_field_tag 'firstname', nil, placeholder: 'Prénom', class:"form-control" %>
+                  <%= text_field_tag 'firstname', nil, placeholder: 'Prénom*', class:"form-control" %>
                 </div>
               </div>
               <div class="col-md-12">
                 <div class="form-group">
-                  <%= text_field_tag 'phone', nil, placeholder: "Téléphone-portable*", class:"form-control" %>
+                  <%= text_field_tag 'phone', nil, placeholder: "Téléphone-portable", class:"form-control" %>
                 </div>
               </div>
               <div class="col-md-12">
@@ -444,11 +444,11 @@ de la mer et le charme de l’<strong>éternel féminin</strong>. </p>
               </div>
               <div class="col-md-12">
                 <div class="form-group">
-                  <%= text_area_tag 'message', nil, placeholder: "Message*", rows:"4", class:"form-control" %>
+                  <%= text_area_tag 'message', nil, placeholder: "Message", rows:"4", class:"form-control" %>
                 </div>
               </div>
               <div class="col-md-12">
-                <p class="p-font4">Je suis intéréssé(e) par:</p>
+                <p class="p-font4">Je suis intéressé(e) par:</p>
               </div>
               <div class="col-md-3">
                 <div class="form-group">
