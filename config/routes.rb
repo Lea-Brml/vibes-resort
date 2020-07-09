@@ -8,4 +8,6 @@ Rails.application.routes.draw do
 
   resources :plaquette
 
+  get '/merci', to: 'static#merci'
+
 end
