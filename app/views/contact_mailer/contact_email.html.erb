@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta content='text/html; charset=UTF-8' http-equiv='Content-Type' />
+  </head>
+  <body>
+    <h1>Vous avez une nouvelle demande de contact !</h1>
+    <p>
+      Une nouvelle personne souhaite entrer en contact avec vous pour avoir plus d'informations sur la résidence <strong>Vibes Resort</strong>. Voici les coordonnées de cette personne :
+    </p>
+    <p>
+      <strong>Prénom / Nom</strong> : <%= @contact.firstname %> <%= @contact.name %> <br>
+      <strong>Téléphone</strong> : <%= @contact.phone %><br>
+      <strong>E-mail</strong> : <%= @contact.email %> <br>
+      <strong>Message</strong> : <%= @contact.message %>
+    </p>
+  </body>
+</html>
