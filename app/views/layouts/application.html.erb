@@ -44,34 +44,37 @@
 
   <!-- ======= Header ======= -->
   <header id="header">
+    <div class="bs-example">
+        <nav class="navbar navbar-expand-md navbar-light bg-white">
+          <%= link_to image_tag( 'vibes-resort-logo2.png'), root_path%>
+            <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+                <span class="navbar-toggler-icon"></span>
+            </button>
 
-    <div id="navbar" class="topnav">
 
-    <div class=" row mx-auto">
-      <div class="col-2 ml-4 pl-4">
-        <%= link_to image_tag( 'vibes-resort-logo2.png'), root_path%>
-      </div>
+            <div class="collapse navbar-collapse bg-white"  id="navbarCollapse">
+                <div class="navbar-nav ml-auto pt-4">
+                  <ul >
+                    <li style=" display: inline-block;
+                    vertical-align: middle" >
+                    <%= link_to "Le village", root_path(anchor:"village") , class:"px-2 nav-item nav-link "%></li>
+                    <li style=" display: inline-block;
+                    vertical-align: middle" ><%= link_to "L'architecture", root_path(anchor:"architecture"), class:"px-2 nav-item nav-link " %></li>
+                    <li style=" display: inline-block;
+                    vertical-align: middle" ><%= link_to "Le rooftop", root_path(anchor:"rooftop") , class:"p-2 nav-item nav-link "%></li>
+                    <li style=" display: inline-block;
+                    vertical-align: middle" ><%= link_to "Les appartements", root_path(anchor:"appartements") , class:"px-2 nav-item nav-link "%></li>
+                    <li style=" display: inline-block;
+                    vertical-align: middle" ><%= link_to "Devenir propriétaire", root_path(anchor:"proprietaire"), class:"px-2 nav-item nav-link " %></li>
+                    <li style=" display: inline-block;
+                    vertical-align: middle" ><%= link_to "Nous contacter", root_path(anchor:"contact"), class:"px-2 btn-get-started " %></li>
+                    <li style=" display: inline-block;
+                    vertical-align: middle" ><%= link_to "Télécharger la plaquette", new_plaquette_path, class:"px-2 btn-invers " %></li>
+                  </ul>
+                </div>
 
-      <div class="col-9" class="container d-none d-lg-block" style="justify-content:space-between;">
-        <ul >
-          <li style=" display: inline-block;
-          vertical-align: middle" ><%= link_to "Le village", root_path(anchor:"village") , class:"p-2 nav-item hide"%></li>
-          <li style="  display: inline-block;
-          vertical-align: middle"><%= link_to "L'architecture", root_path(anchor:"architecture"), class:"p-2 nav-item hide" %></li>
-          <li style="  display: inline-block;
-          vertical-align: middle"><%= link_to "Le rooftop", root_path(anchor:"rooftop") , class:"p-2 nav-item hide"%></li>
-          <li style="  display: inline-block;
-          vertical-align: middle"><%= link_to "Les appartements", root_path(anchor:"appartements") , class:"p-2 nav-item hide"%></li>
-          <li style="  display: inline-block;
-          vertical-align: middle"><%= link_to "Devenir propriétaire", root_path(anchor:"proprietaire"), class:"p-2 nav-item hide" %></li>
-          <li style="  display: inline-block;
-          vertical-align: middle"><%= link_to "Nous contacter", root_path(anchor:"contact"), class:"p-2 btn-get-started" %></li>
-          <li style="  display: inline-block;
-          vertical-align: middle"><%= link_to "Télécharger la plaquette", new_plaquette_path, class:"p-2 btn-invers" %></li>
-        </ul>
-      </div>
-
-    </div>
+            </div>
+        </nav>
     </div>
 
 
