@@ -26,7 +26,9 @@
       gtag('config', 'UA-172128621-1');
 
     </script>
+
   <%end%>
+
 
   <meta name="description" content="Découvrez Vibes Resort, nouvelle résidence de standing à vocation touristique située dans le village naturiste du Cap d'Agde. De la chambre T1 à la suite 4 pièces. Contactez-nous !" />
 
@@ -43,23 +45,25 @@
   <!-- ======= Header ======= -->
   <header id="header">
 
+    <div id="navbar" class="topnav">
+
     <div class=" row mx-auto">
       <div class="col-2 ml-4 pl-4">
         <%= link_to image_tag( 'vibes-resort-logo2.png'), root_path%>
       </div>
 
-      <div class="col-9" class="container" style="justify-content:space-between;">
+      <div class="col-9" class="container d-none d-lg-block" style="justify-content:space-between;">
         <ul >
           <li style=" display: inline-block;
-          vertical-align: middle"><%= link_to "Le village", root_path(anchor:"village") , class:"p-2 nav-item"%></li>
+          vertical-align: middle" ><%= link_to "Le village", root_path(anchor:"village") , class:"p-2 nav-item hide"%></li>
           <li style="  display: inline-block;
-          vertical-align: middle"><%= link_to "L'architecture", root_path(anchor:"architecture"), class:"p-2 nav-item" %></li>
+          vertical-align: middle"><%= link_to "L'architecture", root_path(anchor:"architecture"), class:"p-2 nav-item hide" %></li>
           <li style="  display: inline-block;
-          vertical-align: middle"><%= link_to "Le rooftop", root_path(anchor:"rooftop") , class:"p-2 nav-item"%></li>
+          vertical-align: middle"><%= link_to "Le rooftop", root_path(anchor:"rooftop") , class:"p-2 nav-item hide"%></li>
           <li style="  display: inline-block;
-          vertical-align: middle"><%= link_to "Les appartements", root_path(anchor:"appartements") , class:"p-2 nav-item"%></li>
+          vertical-align: middle"><%= link_to "Les appartements", root_path(anchor:"appartements") , class:"p-2 nav-item hide"%></li>
           <li style="  display: inline-block;
-          vertical-align: middle"><%= link_to "Devenir propriétaire", root_path(anchor:"proprietaire"), class:"p-2 nav-item" %></li>
+          vertical-align: middle"><%= link_to "Devenir propriétaire", root_path(anchor:"proprietaire"), class:"p-2 nav-item hide" %></li>
           <li style="  display: inline-block;
           vertical-align: middle"><%= link_to "Nous contacter", root_path(anchor:"contact"), class:"p-2 btn-get-started" %></li>
           <li style="  display: inline-block;
@@ -67,6 +71,7 @@
         </ul>
       </div>
 
+    </div>
     </div>
 
 

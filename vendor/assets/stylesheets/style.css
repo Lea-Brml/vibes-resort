@@ -153,6 +153,9 @@ p {
   transition: background 0.2s ease-in-out;
 }
 
+
+
+
 /*--------------------------------------------------------------
 # Top Bar
 --------------------------------------------------------------*/
@@ -333,15 +336,13 @@ p {
 }
 
 @media (max-width: 1366px) {
-  .nav-menu .drop-down .drop-down ul {
-    left: -90%;
+
+  .hide {
+    display:none;
   }
-  .nav-menu .drop-down .drop-down:hover > ul {
-    left: -100%;
-  }
-  .nav-menu .drop-down .drop-down > a:after {
-    content: "\ea9d";
-  }
+
+
+
 }
 
 /* Mobile Navigation */
