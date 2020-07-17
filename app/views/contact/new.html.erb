@@ -101,7 +101,7 @@ haut standing et un niveau de confort sans pareil.</p>
 
           <div class="col-xs-12 col-sm-12 col-lg-4 col-md-4 d-none d-lg-block text-center ">
 
-            <%=image_tag("logo-min.png", :style =>'width:40%;', :alt => 'vibes-resort-logo')%>
+            <%=image_tag("logo-min.webp", :style =>'width:40%;', :alt => 'vibes-resort-logo')%>
 
           </div>
 
@@ -115,6 +115,7 @@ haut standing et un niveau de confort sans pareil.</p>
             et restaurant, sur une terrasse panoramique à la vue imprenable. Un véritable appel au lâcher prise et à la volupté sur fond azur !</p>
 
             <%= link_to "Télécharger la plaquette", new_plaquette_path, class: "btn-invers animate__animated animate__fadeInUp scrollto text-center mx-auto", id:"village"%>
+            <%= link_to "Nous contacter", root_path(anchor: 'contact'), class: "btn-get-started " %>
 
           </div>
 
@@ -195,10 +196,10 @@ aménagées, sans oublier un port de plaisance de
 
       <div id="architecture" class="jumbotron-archi active " style="background-image:url(<%= asset_path 'vibes-resort-1.webp' %>) ; background-position:bottom; margin-top:-2em;">
 
-        <div class="container archi text-center" style="padding:6em;" >
+        <div class="container archi text-center" style="padding-top :6em; padding-bottom:6em;" >
             <h2 class="mb-4 pb-4" > L'Architecture</h2>
 
-            <p class="p-font3" > Signé par l’<strong>agence montpelliéraine <a href="http://www.aplus-architecture.com/agence/presentation/" target=_blank">A+ Architecture</a></strong>,
+            <p class="p-font3 w-80 mx-auto" > Signé par l’<strong>agence montpelliéraine <a href="http://www.aplus-architecture.com/agence/presentation/" target=_blank">A+ Architecture</a></strong>,
 le concept architectural de la résidence trouve son
 origine dans le mouvement de la vague. L’ondulation
 des lignes évoque, dans une forme résolument
