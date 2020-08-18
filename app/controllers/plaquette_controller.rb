@@ -12,7 +12,7 @@ class PlaquetteController < ApplicationController
       render "show"
     else
       render "new"
-      flash[:danger] = "Une erreur s'est produite. Veuillez saisir une adresse e-mail valide et réessayer."
+      flash[:danger] = "Une erreur s'est produite. Veuillez remplir les champs requis et réessayer."
     end
 
 
