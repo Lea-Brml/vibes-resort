@@ -6,7 +6,7 @@ class PlaquetteController < ApplicationController
 
   def create
 
-    @plaquette = Plaquette.create(phone: params[:phone],email: params[:email],firstname: params[:firstname],name: params[:name])
+    @plaquette = Plaquette.create(firstname: params[:firstname],name: params[:name],email: params[:email],phone: params[:phone])
 
    if @plaquette.save
       render "show"
