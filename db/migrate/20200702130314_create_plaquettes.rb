@@ -4,7 +4,7 @@ class CreatePlaquettes < ActiveRecord::Migration[5.2]
       t.string "email"
       t.string "phone"
       t.string "name"
-      t.string "first_name"
+      t.string "firstname"
       t.timestamps
     end
   end
